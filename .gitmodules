@@ -1,0 +1,3 @@
+[submodule "bir-laravel"]
+	path = bir-laravel
+	url = https://github.com/brandoyts/bir-laravel.git

@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  nginx:
+    container_name: bir-nginx
+    image: nginx:stable-alpine
+    ports:
+      - 4000:80
+    working_dir: /var/www/html
+    volumes:
+      - ./bir-laravel:/var/www/html
+      - ./bir-nginx/default.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - bir-hris
+
+  api:
+    container_name: bir-api
+    build:
+      args:
+        user: 'doyts'
+        uid: 1000
+      context: ./bir-laravel
+      dockerfile: Dockerfile
+    working_dir: /var/www/html
+    volumes:
+      - ./bir-laravel:/var/www/html
+    networks:
+      - bir-hris
+
+networks:
+  bir-hris:
+    driver: bridge
