@@ -3,4 +3,4 @@
 	url = https://github.com/brandoyts/bir-laravel.git
 [submodule "bir-vue"]
 	path = bir-vue
-	url = https://github.com/brandoyts/bir-laravel.git
+	url = https://github.com/Elmoordista/bir-vue.git
