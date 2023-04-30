@@ -1,0 +1,33 @@
+html {
+	height: 100%;
+}
+body {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	background: rgb(0, 32, 97);
+	background: -moz-linear-gradient(
+		90deg,
+		rgba(0, 32, 97, 1) 0%,
+		rgba(54, 97, 184, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		90deg,
+		rgba(0, 32, 97, 1) 0%,
+		rgba(54, 97, 184, 1) 100%
+	);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 32, 97, 1) 0%,
+		rgba(54, 97, 184, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002061",endColorstr="#3661b8",GradientType=1);
+}
+
+.validation-error {
+	color: red;
+	font-size: 14px;
+}
